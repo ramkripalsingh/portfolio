@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ram Kripal Singh Yadav</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#publication">Publications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ram Kripal Singh Yadav</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#publication" onclick="toggleMenu()">Publications</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()"></a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assest/PP.png" alt="Ram profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ram Kripal Singh Yadav</h1>
+        <p class="section__text__p2">Undergraduate | Major: Earth Science | Minor: Data Science</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/assest/RamCV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="/assest/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ram-kripal-singh-yadav-429827235/'"
+          />
+          <img
+            src="/assest/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/RamKripalGIS'"
+          />
+          <img
+            src="/assest/GoogleScholor.png"
+            alt="My Google Scholar profile"
+            class="icon"
+            onclick="location.href='https://scholar.google.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">Education</h1>
+      <div class="education-container">
+        <div class="education-item">
+          <h2>Indian Institute of Science Education and Research (IISER) Kolkata</h2>
+          <p class="degree">Bachelors of Science, Major: Earth Sciences | Minor: Computational and Data Sciences</p>
+          <p class="year">2021 - 2024</p>
+          <hr class="edu-divider">
+          <h2>Sunbeam School Varuna, Varanasi, Uttar Pradesh</h2>
+          <p class="degree">Class XII</p>
+          <p class="year">2020</p>
+          <hr class="edu-divider">
+          <h2>R.S. Convent Sainik School, Varanasi, Uttar Pradesh</h2>
+          <p class="degree">Class X</p>
+          <p class="year">2018</p>
+        </div>
+      </div>
+      <!-- <h1 class="title">Research Interest</h1>
+      <div class="section-container">
+          <div class="text-container">
+            <p>
+              My research interests lie in integrating natural and built environments to design sustainable and adaptive
+urban landscapes, focusing on mitigating the impacts of climate change and urbanization. I am particularly
+interested in using geospatial technologies, such as GIS and remote sensing, to analyze land-use changes and
+develop innovative strategies for urban planning. Additionally, I aim to leverage machine learning and
+data-driven approaches to predict ecosystem dynamics and urban growth patterns under various climate and
+socioeconomic scenarios. By exploring the interplay between human and natural systems, I aspire to
+contribute to resilient and sustainable landscape designs that balance ecological health with societal needs.
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!--<section id="publication">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Publications</h1>
+      <div class="publications-container">
+        <div class="publication-item">
+          <h2>Title of Publication One</h2>
+          <p class="publication-authors">Author A, Author B, <b>Your Name</b></p>
+          <p class="publication-journal">Journal Name, Year</p>
+          <a class="publication-link" href="https://link-to-publication1.com" target="_blank">View Publication</a>
+        </div>
+        <div class="publication-item">
+          <h2>Title of Publication Two</h2>
+          <p class="publication-authors">Author C, <b>Your Name</b>, Author D</p>
+          <p class="publication-journal">Conference Name, Year</p>
+          <a class="publication-link" href="https://link-to-publication2.com" target="_blank">View Publication</a>
+        </div>
+        ( Add more publication-item blocks as needed )
+      </div>
+    </section> -->
+    <section id="experience">
+      <p class="section__text__p1">My Professional</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-timeline">
+        <div class="experience-entry">
+          <div class="exp-vertical-line"></div>
+          <div class="exp-content">
+            <h2>Intern, Spatial Data Lab</h2>
+            <p class="experience-place">Center for Geographic Analysis, Harvard University</p>
+            <p class="experience-date">June 2024 – September 2024</p>
+            <ul class="experience-details">
+              <li>Transferred telecoupling toolbox from ArcGIS to KNIME workflows for replicable research</li>
+              <li>Mentors: Dr. Nan Jia and Dr. Nakul Gupta</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="edu-divider">
+        <div class="experience-entry">
+          <div class="exp-vertical-line"></div>
+          <div class="exp-content">
+            <h2>Summer Intern, Groundwater Modelling</h2>
+            <p class="experience-place">Indian Institute of Technology (BHU) Varanasi</p>
+            <p class="experience-date">May 2024 – July 2024</p>
+            <ul class="experience-details">
+              <li>Modeled groundwater contamination across Varanasi district using MODFLOW-2005 & QGIS</li>
+              <li>Supervisor: Dr. Prabhat Kumar Singh Dikshit</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="edu-divider">
+        <div class="experience-entry">
+          <div class="exp-vertical-line"></div>
+          <div class="exp-content">
+            <h2>Summer Intern, Quantum Optics</h2>
+            <p class="experience-place">Indian Institute of Technology Jodhpur</p>
+            <p class="experience-date">May 2023 – July 2023</p>
+            <ul class="experience-details">
+              <li>Calculated the coefficient of Abel inversion, reading project and hands-on experience on Febry-Perot Interferometer and GPX-2 TDC (Time to Digital Converter)</li>
+              <li>Supervisor: Dr. V. Narayanan</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Add more experience-entry blocks as needed -->
+      </div>
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Online Learning</p>
+      <h1 class="title">Online Certification Coursework</h1>
+      <div class="certifications-box">
+        <ul class="certification-list">
+          <li>
+            <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/105/noc24-ce67/Course/NPTEL24CE67S46510049404244273.pdf" target="_blank">
+              Advanced Geomatics Engineering
+            </a>
+          </li>
+          <li>
+            <a href="https://coursera.org/verify/specialization/YAV43TGVJRTG" target="_blank">
+              Machine learning specialization (Supervised, Unsupervised, Deep Learning, Decision Tree, Reinforcement learning)
+            </a>
+          </li>
+          <li>
+            <a href="https://coursera.org/verify/L2DQBSTKTMXD" target="_blank">
+              Generative AI with Large Language Models
+            </a>
+          </li>
+          <li>
+            <a href="https://coursera.org/verify/0TEZYLIWJ1CD" target="_blank">
+              AI and Climate Change
+            </a>
+          </li>
+          <li>
+            <a href="https://coursera.org/verify/32EWIG8BW0MZ" target="_blank">
+              Sequences, Time Series and Prediction [Deep Learning]
+            </a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/certificate/UC-3f8fbad7-2a2f-4c11-8838-8aa544b30f59/" target="_blank">
+              Core Spatial Data Analysis: R and QGIS
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              Natural Language Processing with Classification and Vector Spaces
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              Digital Twins in Industry 4.0
+            </a>
+          </li>
+          <!-- Add more certifications as needed -->
+        </ul>
+      </div>
+
+      <div class="certificates-carousel">
+        <div class="carousel-track">
+          <img src="assest/Advanced Geomatics Engineering.pdf" alt="Advanced Geomatics Engineering" onclick="location.href='https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/105/noc24-ce67/Course/NPTEL24CE67S46510049404244273.pdf'"/>
+          <img src="assest/ML_Specialization.pdf" alt="Machine Learning specialization" onclick="location.href='https://coursera.org/verify/specialization/YAV43TGVJRTG'"/>
+          <img src="assest/GenAI&LLM.pdf" alt="GenAI with LLM" onclick="location.href='https://coursera.org/verify/L2DQBSTKTMXD'"/>
+          <img src="assest/AI&ClimateChange.pdf" alt="AI and Climate Change" onclick="location.href='https://coursera.org/verify/0TEZYLIWJ1CD'"/>
+          <img src="assest/Coursera(Time_series).pdf" alt="Sequences, Time Series and Prediction" onclick="location.href='https://coursera.org/verify/32EWIG8BW0MZ'"/>
+          <img src="assest/QGIS & R.jpeg" alt="Core Spatial Data Analysis" onclick="location.href='https://www.udemy.com/certificate/UC-3f8fbad7-2a2f-4c11-8838-8aa544b30f59/'"/>
+          <img src="assest/Unsuper_reco_reinforce.pdf" alt="Unsuper_reco_reinforce" onclick="location.href='https://coursera.org/verify/VFFCPLUA6WVX'"/>
+          <img src="assest/Adv. Learning Algorithms.pdf" alt="Advanced Learning Algorithms" onclick="location.href='https://coursera.org/verify/P47D4FSDKTE5'"/>
+          <img src="assest/SupervisedML.pdf" alt="SupervisedML" onclick="location.href='https://coursera.org/verify/UC6TFG0H9BUG'"/>
+          <img src="assest/Advanced Geomatics Engineering.pdf" alt="Advanced Geomatics Engineering" onclick="location.href='https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/105/noc24-ce67/Course/NPTEL24CE67S46510049404244273.pdf'"/>
+          <img src="assest/ML_Specialization.pdf" alt="Machine Learning specialization" onclick="location.href='https://coursera.org/verify/specialization/YAV43TGVJRTG'"/>
+          <img src="assest/GenAI&LLM.pdf" alt="GenAI with LLM" onclick="location.href='https://coursera.org/verify/L2DQBSTKTMXD'"/>
+          <img src="assest/AI&ClimateChange.pdf" alt="AI and Climate Change" onclick="location.href='https://coursera.org/verify/0TEZYLIWJ1CD'"/>
+          <img src="assest/Coursera(Time_series).pdf" alt="Sequences, Time Series and Prediction" onclick="location.href='https://coursera.org/verify/32EWIG8BW0MZ'"/>
+          <img src="assest/QGIS & R.jpeg" alt="Core Spatial Data Analysis" onclick="location.href='https://www.udemy.com/certificate/UC-3f8fbad7-2a2f-4c11-8838-8aa544b30f59/'"/>
+          <img src="assest/Unsuper_reco_reinforce.pdf" alt="Unsuper_reco_reinforce" onclick="location.href='https://coursera.org/verify/VFFCPLUA6WVX'"/>
+          <img src="assest/Adv. Learning Algorithms.pdf" alt="Advanced Learning Algorithms" onclick="location.href='https://coursera.org/verify/P47D4FSDKTE5'"/>
+          <img src="assest/SupervisedML.pdf" alt="SupervisedML" onclick="location.href='https://coursera.org/verify/UC6TFG0H9BUG'"/>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">My Toolbox</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-box">
+        <!-- Advanced Skills -->
+        <div class="skills-category">
+          <h2 class="skills-category-title">Power User</h2>
+          <div class="skills-list">
+            <div class="skill-item">
+              <img src="assest/python-logo-png.png" alt="Python" class="skill-logo" />
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <img src="assest/knime.webp" alt="KNIME" class="skill-logo" />
+              <span>KNIME</span>
+            </div>
+          </div>
+        </div>
+        <!-- Medium Skills -->
+        <div class="skills-category">
+          <h2 class="skills-category-title">Regular User</h2>
+          <div class="skills-list">
+            <div class="skill-item">
+              <img src="assest/qgis.png" alt="QGIS" class="skill-logo" />
+              <span>QGIS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assest/LaTeX_logo.svg.png" alt="LaTeX" class="skill-logo" />
+              <span>LaTeX</span>
+            </div>
+            <div class="skill-item">
+              <img src="assest/C.png" alt="C" class="skill-logo" />
+              <span>C</span>
+            </div>
+            <div class="skill-item">
+              <img src="assest/OL-removebg-preview.png" alt="OriginLab" class="skill-logo" />
+              <span>OriginLab</span>
+            </div>
+          </div>
+        </div>
+        <!-- Basic Skills -->
+        <div class="skills-category">
+          <h2 class="skills-category-title">Occasional User</h2>
+          <div class="skills-list">
+            <div class="skill-item">
+              <img src="assest/r_icon.webp" alt="R" class="skill-logo" />
+              <span>R</span>
+            </div>
+            <div class="skill-item">
+              <img src="assest/HTML.png" alt="HTML" class="skill-logo" />
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <img src="assest/CSS.png" alt="CSS" class="skill-logo" />
+              <span>CSS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assest/matlab.svg" alt="Matlab" class="skill-logo" />
+              <span>Matlab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact</h1>
+      <div class="contact-box">
+        <div class="contact-item">
+          <img src="assest/email.png" alt="Email" class="contact-logo" />
+          <div class="contact-info">
+            <a href="mailto:rksy21ms082@iiserkol.ac.in">rksy21ms082@iiserkol.ac.in</a>
+            <a href="mailto:ramkripal1402@gmail.com">ramkripal1402@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <img src="assest/Whatsapp.png" alt="WhatsApp" class="contact-logo" />
+          <div class="contact-info">
+            <a href="https://wa.me/919519511402" target="_blank">+91 95195 1402</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <img src="assest/linkedin.png" alt="LinkedIn" class="contact-logo" />
+          <div class="contact-info">
+            <a href="https://www.linkedin.com/in/ram-kripal-singh-yadav-429827235/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#publication">Publications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Ram Kripal Singh Yadav. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    
+  </body>
+</html>

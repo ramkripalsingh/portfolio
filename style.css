@@ -357,6 +357,19 @@ section {
   width: 400px;
   margin: auto 0;
 }
+.edu-entry {
+  display: flex;
+  align-items: center;
+  gap: 1rem;  /* space between logo and text */
+  margin-bottom: 1rem;
+}
+
+.edu-logo {
+  width: 115px;   /* adjust size */
+  height: 115px;  /* keep square */
+  object-fit: contain; /* keeps proportions */
+}
+
 /* PUBLICATIONS SECTION */
 #publications {
   position: relative;
